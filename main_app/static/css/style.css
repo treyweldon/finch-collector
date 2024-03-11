@@ -2,10 +2,15 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: cornsilk;
 }
 
 main {
   flex: 1 0 auto;
+}
+
+h1 {
+  color: cornflowerblue;
 }
 
 footer.page-footer {
@@ -13,8 +18,9 @@ footer.page-footer {
   text-align: right;
 }
 
-header {
+.nav-wrapper, .page-footer {
     background-color: cornflowerblue;
   }
 
+  
   
