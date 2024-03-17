@@ -28,7 +28,7 @@ def finches_detail(request, finch_id):
   id_list = finch.accessory.all().values_list('id')
   acc_finch_doesnt_have = Accessory.objects.exclude(id__in=id_list)
   feeding_form = FeedingForm()
-  return render(request, 'finches/detail.html', { 'finch': finch, 'feeding_form': feeding_form, 'accessories': acc_finch_doesnt_have })
+  return render(request, 'finches/detail.html', { 'finch': finch, 'feeding_form': feeding_form, 'accessory': acc_finch_doesnt_have })
 
 # 
 
