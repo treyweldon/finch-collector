@@ -56,8 +56,9 @@
         <div class="card">
           <div class="card-content">
             <span class="card-title">
-              A {{ accessory.material }} {{ accessory.name }}
+              A {{ accessory.name }} 
             </span>
+            <p>{{ accessory.material }}</p>
           </div>
           <div class="card-action">
             <form action="{% url 'unassoc_acc' finch.id accessory.id %}" method="POST">
@@ -79,8 +80,9 @@
         <div class="card">
           <div class="card-content">
             <span class="card-title">
-              A {{ accessory.material }}</span> {{ accessory.name }}
+              A {{ accessory.name }} 
             </span>
+            <p>{{ accessory.material }}</p>
           </div>
           <div class="card-action">
             <form action="{% url 'assoc_acc' finch.id accessory.id %}" method="POST">

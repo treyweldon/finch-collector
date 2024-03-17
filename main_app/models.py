@@ -35,7 +35,7 @@ class Finch(models.Model):
         return self.feeding_set.filter(date=date.today()).count() >= len(MEALS)
     
 class Feeding(models.Model):
-  date = models.DateField('Feeding Date')
+  date = models.DateField('feeding date')
   meal = models.CharField(
     max_length=1,
     choices=MEALS,
